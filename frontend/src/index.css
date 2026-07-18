@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-win text-black;
+  background-color: #008080;
+  /* textura clássica de desktop antigo: um padrão xadrez muito subtil */
+  background-image:
+    linear-gradient(45deg, #00767a 25%, transparent 25%),
+    linear-gradient(-45deg, #00767a 25%, transparent 25%);
+  background-size: 4px 4px;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 34px; /* espaço para a taskbar fixa */
+  font-size: 12px;
+}
+
+/* fieldset/legend ao estilo "group box" do Windows, para as secções do dashboard */
+fieldset.groupbox {
+  border: 2px groove #dfdfdf;
+  padding: 10px;
+  margin: 0 0 16px 0;
+}
+fieldset.groupbox legend {
+  padding: 0 4px;
+  font-weight: bold;
+}
+
+.sunken {
+  border: 2px inset #dfdfdf;
+  background: #fff;
+}
+
+.raised {
+  border: 2px outset #dfdfdf;
+  background: #c0c0c0;
+}
+
+@keyframes spin-sweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-blip {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-sweep {
+  animation: spin-sweep 6s linear infinite;
+}
+
+.animate-blip {
+  animation: pulse-blip 2.4s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-sweep,
+  .animate-blip,
+  .animate-blink {
+    animation: none !important;
+  }
+}

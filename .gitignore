@@ -1,0 +1,18 @@
+# Segredos — NUNCA committar
+backend/.env
+*.env
+!.env.example
+
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+*.pyc
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Editor
+.vscode/
+.DS_Store
