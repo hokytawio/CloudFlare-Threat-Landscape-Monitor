@@ -6,7 +6,6 @@ tempo real ataques DDoS (layer 3/4 e layer 7) dirigidos a Portugal, os países
 de origem, adoção de IPv6, percentagem de tráfego automatizado (bots), e
 anomalias de tráfego reportadas pela Cloudflare.
 
-![Dashboard a funcionar](docs/screenshot-live.png)
 
 ## Porquê este projeto
 
