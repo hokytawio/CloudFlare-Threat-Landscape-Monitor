@@ -1,6 +1,6 @@
 # Security Policy
 
-Este é um projeto pessoal de portefólio, não um produto com equipa dedicada
+Este é um projeto pessoal de portifólio, não um produto com equipa dedicada
 de segurança — mas isso não significa que vulnerabilidades não sejam
 levadas a sério. Esta política explica o que está coberto e como reportar
 um problema.
@@ -13,8 +13,8 @@ diretamente aí.
 
 | Versão | Suportada |
 | --- | --- |
-| `main` (mais recente) | ✅ |
-| Qualquer fork/commit antigo | ❌ |
+| `main` (mais recente) | OK |
+| Qualquer fork/commit antigo | NOK |
 
 ## Âmbito
 
